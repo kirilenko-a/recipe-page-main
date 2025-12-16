@@ -1,0 +1,20 @@
+@import url(./contants.css);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--stone600);
+}
+
+h1, h2, h3,
+p, ul {
+    margin: 0;
+    padding: 0;
+}
