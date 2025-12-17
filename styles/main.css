@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
+.page {
     margin: 0;
     padding: 0;
     font-family: var(--font-primary);
@@ -12,6 +12,18 @@ body {
     font-size: 16px;
     color: var(--stone600);
     background-color: var(--stone100);
+}
+
+@media (min-width: 768px) {
+    .page {
+        padding: 128px 76px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .page {
+        padding: 128px 352px;
+    }
 }
 
 h1, h2, h3,
@@ -26,22 +38,20 @@ p, ul {
 
 @media (min-width: 768px) {
     .container {
-        padding: 128px 76px;
+        padding: 40px;
+        border-radius: 1.5rem;
     }
 }
 
-.header {
+.header {}
 
+.header__image {
+    width: 100%;
+    /*object-fit: contain;*/
 }
 
 @media (min-width: 768px) {
-    .header {
-        padding: 40px;
+    .header__image {
+        border-radius: 0.75rem;
     }
 }
-
-.header_img {
-    width: 100%;
-    max-height: 300px;
-}
-
