@@ -11,35 +11,30 @@
   <title>Recipe page</title>
 </head>
 <body class="page">
-  <div class="container">
-    <header class="header">
-      <img src="./assets/images/image-omelette.jpeg" alt="omelette" class="header__image">
-    </header>
+  <header class="header">
+    <img src="/assets/images/image-omelette.jpeg" alt="omelette" class="header__img">
+  </header>
 
-    <main class="main">
-      <section class="dish">
-        <h1 class="dish__name">Simple Omelette Recipe</h1>
+  <main class="main">
+    <div class="container">
+      <section class="main__dish-info">
+        <h1 class="main__dish-title">Simple Omelette Recipe</h1>
 
-        <p class="dish__description">
-          An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection,
-          optionally filled with your choice of cheese, vegetables, or meats.
+        <p class="main__dish-description">
+          An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.
         </p>
+
+        <div class="main__dish-prep-time">
+          <h3 class="main__dish-prep-time--title">Preparation time</h3>
+
+          <ul class="main__dish-prep-time--list">
+            <li class="main__dish-prep-time--item"><b>Total:</b> Approximately 10 minutes</li>
+            <li class="main__dish-prep-time--item"><b>Preparation:</b> 5 minutes </li>
+            <li class="main__dish-prep-time--item"><b>Cooking:</b> 5 minutes</li>
+          </ul>
+        </div>
       </section>
-
-      <section class="preparation-time">
-        <h3 class="preparation-time__title">Preparation time</h3>
-
-        <ul class="preparation-time__list">
-          <li class="preparation-time__list--item">Total: Approximately 10 minutes</li>
-
-          <li class="preparation-time__list--item">Preparation: 5 minutes</li>
-
-          <li class="preparation-time__list--item">Cooking: 5 minutes</li>
-        </ul>
-      </section>
-    </main>
-
-    <footer class="footer"></footer>
-  </div>
+    </div>
+  </main>
 </body>
 </html>
