@@ -5,13 +5,75 @@
 }
 
 body, h1, h2,
-h3 {
+h3, p, ul {
   margin: 0;
   padding: 0;
 }
 
+strong {
+  font-weight: 600;
+}
+
+.header {
+  margin-bottom: 40px;;
+}
+
 .header_image {
   width: 100%;
+}
+
+.main {
+  padding: 0 32px;
+}
+
+.dish_name {
+  margin-bottom: 24px;
+  font-family: "Young Serif", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  color: var(--stone-900);
+}
+
+.dish_description {
+  margin-bottom: 32px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--stone-600);
+}
+
+.dish_preparation {
+  padding: 24px;
+  border-radius: 12px;
+  background-color: var(--rose-50);
+}
+
+.dish_preparation-name {
+  margin-bottom: 16px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: var(--rose-800);
+}
+
+.dish_preparation-list {
+  margin-bottom: 8px;
+  list-style-position: inside;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--stone-600);
+}
+
+.dish_preparation-item {
+  font-family: "Outfit", sans-serif;
+}
+
+.dish_preparation-item::before {
+  font-size: 32px;
 }
 
 @media (min-width: 768px) {
@@ -28,6 +90,14 @@ h3 {
 
   .header_image {
     border-radius: 12px;
+  }
+
+  .main {
+    padding: 0;
+  }
+
+  .dish_name {
+    font-size: 40px;
   }
 }
 
