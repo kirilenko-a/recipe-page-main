@@ -10,31 +10,29 @@ h3 {
   padding: 0;
 }
 
-.container {
-
-}
-
-@media (min-width: 768px) {
-  .container {
-    padding: 128px 76px;
-  }
-
-  body {
-    background-color: var(--background-color);
-  }
-
-  .header_image {
-    border-radius: 20px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .container {
-    padding: 128px 352px;
-  }
-}
-
 .header_image {
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  body {
+    padding: 128px 76px;
+    background-color: var(--background-color);
+  }
+
+  .container {
+    padding: 40px;
+    border-radius: 24px;
+    background-color: var(--color-white);
+  }
+
+  .header_image {
+    border-radius: 12px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    padding: 128px 352px;
+  }
+}
