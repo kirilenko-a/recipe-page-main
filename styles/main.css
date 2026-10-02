@@ -5,9 +5,14 @@
 }
 
 body, h1, h2,
-h3, p, ul {
+h3, p, ul,
+ol {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: var(--color-white);
 }
 
 strong {
@@ -45,6 +50,7 @@ strong {
 }
 
 .dish_preparation {
+  margin-bottom: 32px;
   padding: 24px;
   border-radius: 12px;
   background-color: var(--rose-50);
@@ -60,7 +66,6 @@ strong {
 }
 
 .dish_preparation-list {
-  margin-bottom: 8px;
   list-style-position: inside;
   font-weight: 300;
   font-size: 16px;
@@ -69,11 +74,87 @@ strong {
 }
 
 .dish_preparation-item {
+  margin-bottom: 8px;
   font-family: "Outfit", sans-serif;
 }
 
-.dish_preparation-item::before {
-  font-size: 32px;
+.dish_preparation-item:last-child {
+  margin-bottom: 0;
+}
+
+.dish_preparation-item::marker {
+  color: var(--rose-800);
+}
+
+.ingredients,
+.instructions {
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--stone-150);
+}
+
+.ingredients_title,
+.instructions_title,
+.nutrition {
+  margin-bottom: 24px;
+  font-family: "Young Serif", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 100%;
+  color: var(--brown-800);
+}
+
+.ingredients_list,
+.instructions_list {
+  list-style-position: inside;
+}
+
+.ingredients_item,
+.instructions_item,
+.nutrition_description,
+.nutrition_item,
+.nutrition_value {
+  margin-bottom: 8px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--stone-600);
+}
+
+.ingredients_item:last-child,
+.instructions_item:last-child {
+  margin-bottom: 0;
+}
+
+.ingredients_item::marker,
+.instructions_item::marker {
+  font-weight: 600;
+  color: var(--brown-800);
+}
+
+.footer {
+  padding: 0 32px 40px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition_description {
+  margin-bottom: 24px;
+}
+
+.nutrition_item,
+.nutrition_value {
+  padding: 12px;
+  border-bottom: 1px solid var(--stone-150);
+}
+
+.nutrition_value {
+  font-weight: 600;
+  color: var(--brown-800);
 }
 
 @media (min-width: 768px) {
