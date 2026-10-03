@@ -8,7 +8,7 @@ Code: [GitHub](https://github.com/kirilenko-a/recipe-page-main)\
 ## Built with
 
 HTML\
-CSS\
+CSS
 
 ## Author
 
